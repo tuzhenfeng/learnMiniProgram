@@ -1,3 +1,6 @@
 <!--pages/home/home.wxml-->
 <text class="title">hello world</text>
 <button size="mini"> 按钮</button>
+<button open-type="getUserInfo" bindgetuserinfo="getuser" size="mini">授权</button>
+<open-data type="userNickName"> </open-data>
+<!-- <open-data type="userAvatarUrl"> </open-data> -->

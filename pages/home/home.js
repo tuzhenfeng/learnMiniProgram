@@ -1,4 +1,9 @@
 // pages/home/home.js
+// 可以引用定义的全局变量
+const app=getApp()
+const name=app.globalData.name
+const age = app.globalData.age
+
 Page({
 
   /**
@@ -12,13 +17,19 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    console.log('onload')
   },
+  // 通过点击事件获取用户信息
+  getuser(event){
+    console.log(event)
+  },
+
 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
+    console.log('onready')
 
   },
 
@@ -26,6 +37,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
+    console.log('onshow')
 
   },
 
@@ -33,6 +45,7 @@ Page({
    * 生命周期函数--监听页面隐藏
    */
   onHide: function () {
+    console.log('onhide')
 
   },
 
@@ -40,6 +53,7 @@ Page({
    * 生命周期函数--监听页面卸载
    */
   onUnload: function () {
+    console.log('onunload')
 
   },
 

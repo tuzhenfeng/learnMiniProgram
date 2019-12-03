@@ -2,5 +2,30 @@
   "pages": [
     "pages/home/home",
     "pages/about/about"
-  ]
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#ff5777",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "我的小程序",
+    "backgroundColor": "orange",
+    "enablePullDownRefresh": true,
+    "backgroundTextStyle": "light"
+  },
+  "tabBar": {
+    "selectedColor": "#ff5777",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "home",
+        "iconPath": "assets/images/tabbar/home.png",
+        "selectedIconPath": "assets/images/tabbar/home_active.png"
+      },
+      {
+        "pagePath": "pages/about/about",
+        "text": "cart",
+        "iconPath": "assets/images/tabbar/cart.png",
+        "selectedIconPath": "assets/images/tabbar/cart_active.png"
+      }
+    ]
+  }
 }
