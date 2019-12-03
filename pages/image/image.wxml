@@ -1,0 +1,16 @@
+<!--pages/image/image.wxml-->
+<!-- <text>pages/image/image.wxml</text> -->
+<button bindtap="choose">选择图片</button>
+<!-- 补充 相册中的图片 -->
+<image src="{{imagepath}}"></image>
+
+<!-- bingload:监听图片加载完成 -->
+<!-- lazy-load:图片懒加载 -->
+<image src="https://fc3tn.baidu.com/it/u=3025909226,1763324618&fm=202&src=bqdata" bindload="imageload" wx:for="{{2}}" wx:key="ix" lazy-load="true"></image>
+
+
+<!-- show-menu-by-longpress:长按图片出现识别小程序码 -->
+<image src="https://fc3tn.baidu.com/it/u=3025909226,1763324618&fm=202&src=bqdata" show-menu-by-longpress ></image>
+
+
+<!-- mode -->

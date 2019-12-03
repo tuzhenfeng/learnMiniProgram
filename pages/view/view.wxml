@@ -1,0 +1,5 @@
+<!--pages/view/view.wxml-->
+<!-- <text>pages/view/view.wxml</text> -->
+<view class="box">哈哈哈哈</view>
+<view hover-class="box1" hover-start-time="100">呵呵呵呵</view>
+
