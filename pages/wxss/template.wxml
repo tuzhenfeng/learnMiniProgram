@@ -1,0 +1,5 @@
+<!-- 模板中包裹的内容，在没有被使用前，是不会进行任何渲染的 -->
+<template name="contentitem">
+  <button>{{btntext}}</button>
+  <view>{{content}}</view>
+</template>

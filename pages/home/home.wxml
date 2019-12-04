@@ -1,3 +1,30 @@
 <!--pages/home/home.wxml-->
 <text class="title">hello world</text>
-<button size="mini"> 按钮</button>
+<button size="mini"  bindtap="change"> 切换</button>
+<view wx:if="{{isshow}}">哈哈哈哈</view>
+<view wx:if="{{score>90}}">优秀</view>
+<view wx:elif="{{score>80}}">良好</view>
+<view wx:elif="{{score>60}}">及格</view>
+<view wx:else>不及格</view>
+
+<view hidden="{{false}}">我是hidden属性内容</view>
+
+<view wx:for="{{['a','b']}}">{{item}}</view>
+<view wx:for="{{['a','b']}}">{{index}}{{item}}</view>
+<view wx:for="{{10}}" >{{index}}-----{{item}}</view>
+
+<view wx:for="{{movies}}" wx:for-item="movies" wx:for-index="i">{{i}}{{movies}}</view>
+
+
+<block  wx:for="{{movies}}" wx:key="index">
+  <view>{{item}}</view>
+</block>
+
+<block></block>
+<!-- 模板中包裹的内容，在没有被使用前，是不会进行任何渲染的 -->
+<template name="contentitem">
+  <button>{{btntext}}</button>
+  <view>{{content}}</view>
+</template>
+<template is="contentitem" data="{{btntext:123,content:123}}"/>
+<import src="./../wxss/template.wxml"/>

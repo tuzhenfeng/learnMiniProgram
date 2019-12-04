@@ -1,0 +1,22 @@
+<!--wxml/wxml.wxml-->
+<text>wxml/wxml.wxml</text>
+<button bindtap="handleBtn" size="mini">按钮1</button>
+<button bind:tap="handleBtn" size="mini">按钮2</button>
+<button catch:tap="handleBtn" size="mini">按钮3</button>
+
+<!-- 事件对象 -->
+<button bind:tap="bindtap">事件对象</button>
+<!-- 事件传递参数 -->
+<view bindtap="ontap" wx:for="{{hobby}}" data-index="{{index}}" data-item="{{item}}">
+  {{item}}
+</view>
+
+<!-- 事件冒泡和捕获 -->
+<!-- bind:一层一层传递 -->
+<!-- catch：阻止事件的进一步传递 -->
+<view class="view1" capture-bind:tap="capture1" bindtap="handle1">
+  <view class="view2" capture-bind:tap="capture2" bindtap="handle2">
+    <view class="view3" capture-bind:tap="capture3" bindtap="handle3">
+    </view>
+  </view>
+</view>

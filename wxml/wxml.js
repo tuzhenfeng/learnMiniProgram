@@ -1,18 +1,23 @@
-// pages/home/home.js
+// wxml/wxml.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    isshow:true,
-    score:91,
-    movies:['年少的你','大圣娶亲']
+    hobby:['吃饭','睡觉','打豆豆']
   },
-  change(){
-    this.setData({
-      isshow:!this.data.isshow
-    })
+  handleBtn(){
+    console.log('触发了点击事件')
+  },
+  bindtap(event){
+    console.log(event)
+  },
+  ontap(event){
+    console.log(event)
+    const index = event.currentTarget.dataset.index
+    const item = event.currentTarget.dataset.item
+    console.log(index,item)
   },
   /**
    * 生命周期函数--监听页面加载

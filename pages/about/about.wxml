@@ -1,2 +1,22 @@
 <!--pages/about/about.wxml-->
-<text>pages/about/about.wxml</text>
+<text>pages/about/about.wxml\n</text>
+<!-- <wxs module="info">
+  //js代码
+  var message="hello world"
+  var name="tutu"
+  var sum=function(num1,num2){
+    return num1+num2
+  }
+
+  commonjs模块化导出
+  module.exports={
+    message：message,
+    name:name,
+    sum:sum
+  }
+</wxs>
+<view>{{info.message}}</view> -->
+<wxs src="../wxss/format.wxs" module="format"/>
+<text>{{format.priceFormat(20.2358,3)}}</text>
+
+
