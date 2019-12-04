@@ -1,31 +1,21 @@
-// pages/home/home.js
+// pages/scroll/scroll.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    message:'你好,小北',
-    firstName:'易烊',
-    lastName:'千玺',
-    score:60,
-    nowTime:new Date().toLocaleString(),
-    isactive:false
+
   },
-  choice(){
-    this.setData({
-      isactive: !this.data.isactive
-    })
+  // 监听滚动
+  handleScroll(event){
+    console.log(event.detail.scrollTop)
   },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    setTimeout(()=>{
-      this.setData({
-        nowTime:new Date().toLocaleString()
-      })
-    },1000)
+
   },
 
   /**

@@ -1,0 +1,22 @@
+<!--pages/input/input.wxml-->
+<!-- <text>pages/input/input.wxml</text> -->
+<!-- 1.普通用法 -->
+<input></input>
+
+<!-- 2.value：input中的默认值 -->
+<input value="hello world"></input>
+
+<!-- 3.type：键盘类型（文本/数字） -->
+<input type="number"></input>
+
+<!-- 4.password:明文/暗文 -->
+<input password></input>
+
+<!-- 5.placeholder:占位文字 -->
+<input placeholder="你好"></input>
+
+<!-- 6.input绑定事件 -->
+<input bindinput='handleInput' 
+  bindfocus="handlefocus"
+  bindblur="handleblur"
+></input>

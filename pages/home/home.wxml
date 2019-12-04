@@ -1,3 +1,12 @@
 <!--pages/home/home.wxml-->
 <text class="title">hello world</text>
 <button size="mini"> 按钮</button>
+
+<!-- Mustache语法 -->
+<view>{{message}}</view>
+<view>{{firstName}}{{lastName}}</view>
+<view>{{age>=18?'成年人':'未成年'}}</view>
+
+<view>{{nowTime}}</view>
+<button bindtap="choice">切换</button>
+<view class="box {{isactive?'active':''}}">变身</view>

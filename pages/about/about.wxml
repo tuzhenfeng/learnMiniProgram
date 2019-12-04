@@ -1,2 +1,24 @@
 <!--pages/about/about.wxml-->
 <text>pages/about/about.wxml</text>
+<!--     设置样式的三种方式 -->
+<!-- 1.1 行内样式(内联样式) -->
+<view style="color:red">哈哈哈哈</view>
+
+<!-- 1.2 页内样式 -->
+<view class="item1">嘿嘿嘿</view>
+
+<!-- 1.3全局样式 -->
+<view class="container">嚯嚯嚯</view>
+
+<!-- 2.三种样式作用于一个  -->
+<!-- 优先级一次是:行内样式>页面样式>全局样式 -->
+<view style='color:yellow' class="item">112</view>
+
+<!-- wxss中的单位:rpx -->
+<view class="box1">123</view>
+<view class="box2">123</view>
+
+
+<!-- 官方样式库 -->
+
+
