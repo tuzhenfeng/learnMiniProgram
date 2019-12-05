@@ -2,5 +2,22 @@
 <text class="title">hello world</text>
 <button size="mini"> 按钮</button>
 
-
+  
 <view>1.知识点1</view>
+<!-- 1.navigator页面跳转 -->
+<navigator url="/pages/about/about">跳到about页面</navigator>
+<!-- 2.navigator属性：oprn-type -->
+<navigator url="/pages/about/about" open-type="redirect">redirect跳到about页面</navigator>
+
+<navigator url="/pages/about/about" open-type="switchTab">switchBar跳到about页面</navigator>
+
+<navigator url="/pages/about/about" open-type="reLaunch">reLaunch跳到about页面</navigator>
+
+<!-- <navigator open-type="navigateBack" delta="2">返回</navigator> -->
+
+<!-- 数据传递 -->
+<navigator url="/pages/detail/detail?name=tutu&age=18" >跳到detail页面</navigator>
+<view>{{title}}</view>
+
+<!-- 通过代码跳转 -->
+<button bindtap="handlePushDetail">通过代码跳转</button>
