@@ -2,5 +2,10 @@
 <text class="title">hello world</text>
 <button size="mini"> 按钮</button>
 
-
 <view>1.知识点1</view>
+<!-- 1.toast -->
+<button size="mini"  bindtap="handleShow">handleShow</button>
+<button size="mini"  bindtap="handleModule">handleModule</button>
+<button size="mini"  bindtap="handleloading">handleloading</button>
+<button size="mini"  bindtap="handleaction">handleaction</button>
+<button open-type='share'>分享</button>

@@ -7,7 +7,56 @@ Page({
   data: {
 
   },
-
+  // toast弹窗
+  handleShow(){
+    wx.showToast({
+      title: '加载中',
+      mask:true,
+      success:function(){
+        console.log('成功')
+      },
+      fail:function(){
+        console.log('失败')
+      },
+      complete:function(){
+        console.log('完成时')
+      }
+    })
+  },
+  // 文本选择弹框
+  handleModule(){
+    wx.showModal({
+      title: '我是标题',
+      content: '我是内容',
+      // showCancel:false,
+      cancelText:'退出',
+      success:function(res){
+        console.log(res)
+      }
+    })
+  },
+  // 加载中
+  handleloading(){
+    wx.showLoading({
+      title: '加载中',
+      mask:true
+    })
+    // 必须手动hideloading才会让loading消失
+    setTimeout(function(){
+      wx.hideLoading()
+    },1000)
+  },
+  // 底部弹框
+  handleaction(){
+    wx.showActionSheet({
+      itemList: ['相册','拍照'],
+      itemColor:'red',
+      success:function(res){
+        console.log(res)
+        // switch(res.tapIndex)
+      }
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
@@ -60,7 +109,7 @@ Page({
   /**
    * 用户点击右上角分享
    */
-  onShareAppMessage: function () {
-
+  onShareAppMessage: function (option) {
+    return 
   }
 })
