@@ -1,6 +1,2 @@
 <!--pages/home/home.wxml-->
-<text class="title">hello world</text>
-<button size="mini"> 按钮</button>
-
-
-<view>1.知识点1</view>
+<w-tab-control titles="{{['衣服','裤子','鞋子']}}" bind:itemclick="handleclick"></w-tab-control>
