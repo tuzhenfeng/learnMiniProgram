@@ -1,0 +1,4 @@
+<!--components/w-back/w-back.wxml-->
+<view class="back-top">
+  <image src="/assets/common/top.png" bind:tap="handleback"></image>
+</view>
